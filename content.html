@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content</title>
+
+            <!--LINK CSS SLIDE FOTO-->
+            <link rel="stylesheet" type="text/css" href="style-content.css">
+ 
+<!-- Slick CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<!-- link CSS icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+crossorigin="anonymous" referrerpolicy="no-referrer">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+</head>
+
+<style>
+
+body {
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.slick-prev, .slick-next {
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+}
+
+.slick-prev {
+    left: 5px;
+}
+.slick-next {
+    right: 5px;
+}
+
+.slick-prev:before, 
+.slick-next:before {
+    font-size: 40px;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.slick-dots {
+    bottom: 15px;
+}
+
+.slick-dots li button:before {
+    font-size: 12px;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    opacity: 1;
+}
+.slick-dots li.slick-active button:before {
+    color: #dedede;
+}
+
+.contrast-low {
+    filter: contrast(50%) brightness(95%)  blur(3px);
+    
+}
+
+.text-and-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.text {
+    font-size: 50px;
+    font-family: Poppins;
+    margin-bottom: 40px;
+}
+
+.icons {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+a {
+    width: 100px;
+    height: 100px;
+    color: rgb(2, 2, 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 90px;
+    transition: bacckground 0.3s, transform 0.3s;
+    align-items: center;
+}
+
+a:hover {
+    transform: scale(1.5);
+}
+
+.image-container {
+  position: relative;
+}
+
+.text-on-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: lightgrey;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
+  font-family: poppins;
+  font-size: 60px;
+}
+
+.passage {
+            font-family: 'Poppins';
+            margin-left: 100px;
+            margin-right: 100px;
+            padding: 20px;
+            text-align: center;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: "Neuton", sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    background: rgb(0, 0, 0);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.footer-logo {
+    margin: 5px; 
+    padding: 5px; 
+    margin-left: 10px;
+}
+
+</style>    
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <img class="logo" src="WhatsApp Image 2024-07-19 at 05.28.42.jpeg" alt="logo">
+                <ul class="nav-links">
+                    <li><a href="index.html"><span class="material-symbols-outlined">home</span>Home</a></li>
+                    <li><a href="about.html"><span class="material-symbols-outlined">info</span>About us</a></li>
+                    <li><a href="index.php"><span class="material-symbols-outlined">comment</span>Comment</a></li>
+                    <li><a href="#"><span class="material-symbols-outlined">web</span>Content</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+<!--[START SLIDE FOTO]-->
+    <div class="container">
+    <!--SLIDE FOTO-->
+    <div class="slider">
+
+        <div>
+            <div class="image-container">
+          <img src="img/001.jpg" alt="foto 1" class="contrast-low">
+          <div class="text-on-image">
+            <h3>TOGETHER</h3>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="image-container">
+          <img src="img/002.jpg" alt="foto 2" class="contrast-low">
+          <div class="text-on-image">
+            <h3>WE</h3>
+        </div>
+        </div>
+        </div>
+        <div>
+            <div class="image-container">
+          <img src="img/003.jpg" alt="foto 3" class="contrast-low">
+          <div class="text-on-image">
+            <h3>BUILD</h3>
+          </div>
+        </div>
+        </div>
+        <div>
+          <div class="image-container">
+          <img src="img/004.jpg" alt="foto 4" class="contrast-low">
+          <div class="text-on-image">
+            <h3>OUR</h3>
+        </div>
+        </div>
+        </div>
+        <div>
+          <div class="image-container">
+          <img src="img/005.jpg" alt="foto 5" class="contrast-low">
+          <div class="text-on-image">
+            <h3>SKILLS</h3>
+        </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- teks and icons -->
+<div class="text-and-icons">
+ <h1 align="center" class="text"> WHAT DO WE LEARN?</h1>
+ <div class="icons">
+    <a><i class="fa-brands fa-html5"></i></a>
+    <a><i class="fa-brands fa-css3-alt"></i></a>
+    <a><i class="fa-brands fa-js"></i></a>
+    <a><i class="fa-brands fa-php"></i></a>
+    <a><i class="fa-solid fa-database"></i></a>
+ </div>
+</div>
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Slick JS -->    
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<!--[END SLIDE FOTO]-->
+
+    <!--LINK JAVASCRIPT SLIDE FOTO-->
+    <script src="animasi-content.js"></script>
+        <div class="passage">
+        <b><large>Untuk membuat suatu website, yang perlu kita lakukan adalah:</large></b>
+        <p>buat struktur dasarnya terlebih dahulu, <br>
+            yaitu dengan menggunakan <b>HTML</b><br>
+            (<i>Hypertext Markup Language</i>).<br>
+            Kemudian, untuk membuat website yang lebih interaktif, <br>
+            kita bisa menggunakan <b>JavaScript</b> dan <b>CSS</b>.
+        </p>
+        </div> 
+        <div class="passage">
+        <b><large>Kalau kita ingin membuat website yang lebih kompleks, maka:</large></b><br>
+        <p>kita dapat menggunakan <b>PHP</b>, <br>
+            yaitu singkatan dari <i>Hypertext Preprocessor</i>.<br>
+            Bahasa skrip <b>PHP</b> dapat dijalankan di <b><i>web server</i></b> dan<br>
+            dikombinasikan dengan HTML, CSS, dan JavaScript.<br>
+            Sedangkan <b><i>database</i></b> digunakan bila kita memiliki banyak data,<br>
+            karena memudahkan dalam pengorganisasian dan pengelolaan data.
+        </p>
+        </div>
+    </div>
+    <footer>
+        <p><span>Hak Cipta &copy; 2024 - Junior Web Programer</span></p>
+        <div class="footer-logo">
+            <img src="disnakercirebon.png" alt="JWP Logo" width="150" height="30"> 
+        </div>
+        <div class="footer-logo">
+            <img src="Logo_Kementerian_Ketenagakerjaan_(2016).png" alt="JWP Logo" width="50" height="50"> 
+        </div>
+    </footer>
+</body>
+</html>

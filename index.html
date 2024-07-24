@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Datang</title>
+    <link rel="stylesheet" href="styless.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <img class="logo" src="WhatsApp Image 2024-07-19 at 05.28.42.jpeg" alt="logo">
+                <div class="menu-icon">
+                    <span class="material-symbols-outlined">menu</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="home-page.html"><span class="material-symbols-outlined">home</span>Home</a></li>
+                    <li><a href="about.html"><span class="material-symbols-outlined">info</span>About us</a></li>
+                    <li><a href="index.php"><span class="material-symbols-outlined">comment</span>Comment</a></li>
+                    <li><a href="content.html"><span class="material-symbols-outlined">web</span>Content</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="jumbotron">
+        <div class="content">
+            <h1>Welcome to Our Website!</h1>
+            <a href="content.html" class="btn">Learn More</a>
+        </div>
+        <div class="custom-music-player">
+            <button class="play-btn">▶</button>
+            <input type="range" class="progress-bar" value="0" min="0" max="100">
+            <button class="volume-btn">🔊</button>
+        </div>
+        <audio id="audio-player" src="The 1975 - About You.mp3"></audio>
+    </div>
+
+    <footer>
+        <p><span>Hak Cipta &copy; 2024 - Junior Web Programer</span></p>
+        <div class="footer-logo">
+            <img src="disnakercirebon.png" alt="JWP Logo" width="150" height="30"> 
+        </div>
+        <div class="footer-logo">
+            <img src="Logo_Kementerian_Ketenagakerjaan_(2016).png" alt="JWP Logo" width="50" height="50"> 
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.play-btn').addEventListener('click', () => {
+            const audio = document.getElementById('audio-player');
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        });
+        
+        document.querySelector('.volume-btn').addEventListener('click', () => {
+            const audio = document.getElementById('audio-player');
+            audio.volume = audio.volume === 1 ? 0.5 : 1;
+        });
+        
+        document.querySelector('.progress-bar').addEventListener('input', (e) => {
+            const audio = document.getElementById('audio-player');
+            audio.currentTime = (e.target.value / 100) * audio.duration;
+        });
+        
+        document.getElementById('audio-player').addEventListener('timeupdate', () => {
+            const audio = document.getElementById('audio-player');
+            const progressBar = document.querySelector('.progress-bar');
+            progressBar.value = (audio.currentTime / audio.duration) * 100;
+        });
+
+        document.querySelector('.menu-icon').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
